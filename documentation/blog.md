@@ -46,3 +46,20 @@
 - Initialized a GitHub repository for the project.
 - Added Hardware Requirements Specification, README, and this development blog.
 
+---
+
+## 01.10.2023
+- Started with initial schematics design. 
+- Searched for previously used libraries and components which are available in Delta.
+
+---
+
+## 04.10.2023
+- Continued with schematics design.
+
+---
+
+## 10.10.2023
+- Finished the initial schematics and ready for review. 
+
+---

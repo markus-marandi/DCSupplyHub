@@ -25,6 +25,9 @@ The project has undergone several revisions:
 
 - **1.0** (18.09.2023): Initial Version.
 - **1.1** (20.09.2023): GANTT chart.
+- **1.2** (27.09.2023): Started documentation and specification.
+- **1.3** (04.10.2023): Added component list.
+- **1.4** (10.10.2023): Added schematics.
 
 For a detailed revision history, please refer to the specification document.
 
