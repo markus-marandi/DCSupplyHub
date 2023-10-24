@@ -1,1 +1,3 @@
-Record=TopLevelDocument|FileName=DCSupplyHub.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=v2-DCSupplyHub.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=v2-DCSupplyHub.SchDoc|FileName=v2-DCSupplyHub-current.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=v2-DCSupplyHub.SchDoc|FileName=v2-DCSupplyHub-outputs.SchDoc|SheetNumber=3
