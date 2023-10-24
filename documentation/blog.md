@@ -63,3 +63,37 @@
 - Finished the initial schematics and ready for review. 
 
 ---
+
+## 15.10.2023
+
+Added II version of schematics
+
+- divided the schematics on 3 different A4s
+- modified the grid size
+- modified fuse symbol and designator
+- flipped J4 on Y-axis and added references for + and -
+- added reset pull up cap and resistor with reset button to MCU
+- added micro-USB for programming MCU
+- some minor schematics and symbol fixes
+
+Still missing or needs fixing: 
+
+- Modify the location of V_IN_SENSE to the place where it is measured
+- Some symbols are with different style
+- Opamp needs to have opamp symbol on footprint
+- Use DAC if we have stable output from PWM_OUT
+- 2 Zerner diodes should be replaced by one component
+- Every component should have URL to datasheet
+- All of the power NET's should have voltage in their name and then they should have different symbol than signal nets
+- Review caps, right now there are 3 different packages
+- Review D8 (THT?)
+- Add bypass caps to U9 and U10
+- U11 and U12 bulk caps?
+- Add no ERC flag to all not-used pins
+
+
+
+
+
+
+

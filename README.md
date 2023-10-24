@@ -28,6 +28,7 @@ The project has undergone several revisions:
 - **1.2** (27.09.2023): Started documentation and specification.
 - **1.3** (04.10.2023): Added component list.
 - **1.4** (10.10.2023): Added schematics.
+- **1.5** (15.10.2023): Added second version of schematics. 
 
 For a detailed revision history, please refer to the specification document.
 
