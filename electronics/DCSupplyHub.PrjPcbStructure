@@ -1,3 +1,4 @@
-Record=TopLevelDocument|FileName=v2-DCSupplyHub.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=v2-DCSupplyHub.SchDoc|FileName=v2-DCSupplyHub-current.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=v2-DCSupplyHub.SchDoc|FileName=v2-DCSupplyHub-outputs.SchDoc|SheetNumber=3
+Record=TopLevelDocument|FileName=LOG.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=v2-DCSupplyHub-outputs.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=v2-DCSupplyHub-sensing.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=v2-DCSupplyHub.SchDoc|SheetNumber=1
