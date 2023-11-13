@@ -1,4 +1,4 @@
-Record=TopLevelDocument|FileName=LOG.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=v2-DCSupplyHub-outputs.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=v2-DCSupplyHub-sensing.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=v2-DCSupplyHub.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=DCDC-EPOT.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=DCDC-EPOT.SchDoc|FileName=LOG.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=DCDC-EPOT.SchDoc|FileName=PWM-DAC-PSU.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=DCDC-EPOT.SchDoc|FileName=v2-DCSupplyHub.SchDoc|SheetNumber=1
