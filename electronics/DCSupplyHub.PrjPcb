@@ -188,23 +188,6 @@ GenerateClassCluster=0
 DocumentUniqueId=ZEOIQNJM
 
 [Document9]
-DocumentPath=output&ext-modules.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=7
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=SBIZAJEQ
-
-[Document10]
 DocumentPath=PWM-DAC-PSU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -220,6 +203,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TNUCZZBT
+
+[Document10]
+DocumentPath=output&ext-modules.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=7
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SBIZAJEQ
 
 [Document11]
 DocumentPath=DCSupplyHub.OutJob
