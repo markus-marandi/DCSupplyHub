@@ -1,4 +1,5 @@
 Record=TopLevelDocument|FileName=LOG.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=output&ext-modules.SchDoc|SheetNumber=5
 Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=PWM-DAC-PSU.SchDoc|SheetNumber=4
 Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=v2-DCSupplyHub.SchDoc|SheetNumber=1
 Record=NoMainPathDocument|SourceDocument=LOG.SchDoc|FileName=VCONV-DAC.SchDoc|SheetNumber=3
