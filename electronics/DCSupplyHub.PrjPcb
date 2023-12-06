@@ -52,6 +52,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=DCSupplyHub-v2_20231206a.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=QACRZNZF
+
+[Document2]
 DocumentPath=v2-DCSupplyHub.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -68,7 +85,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EWLVPKLG
 
-[Document2]
+[Document3]
 DocumentPath=DCSupplyHub-v2.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -85,7 +102,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LIMZTPLG
 
-[Document3]
+[Document4]
 DocumentPath=\\Mac\ProgramData\Altium\Altium Designer {F955E482-436F-45FE-B58C-6A0DB4D8EF7D}\VaultEditCache\1EB63D819221E3AAA05C2A6D90CBA11C\Released\B5BF1607-2253-408C-8BD7-3108B6131DEE\375d75c1fe5e4df43ffdd1e3c111aba.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -102,7 +119,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DKVQRQQP
 
-[Document4]
+[Document5]
 DocumentPath=\\Mac\ProgramData\Altium\Altium Designer {F955E482-436F-45FE-B58C-6A0DB4D8EF7D}\VaultEditCache\1EB63D819221E3AAA05C2A6D90CBA11C\Released\CMP-08605-000072-1.CmpLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -119,7 +136,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document6]
 DocumentPath=LOG.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -136,7 +153,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NFXCMTTN
 
-[Document6]
+[Document7]
 DocumentPath=DCSupplyHubLib.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -153,7 +170,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XVPXLDTP
 
-[Document7]
+[Document8]
 DocumentPath=DCSupplyHupLib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -170,7 +187,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FTLVCWWV
 
-[Document8]
+[Document9]
 DocumentPath=VCONV-DAC.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -187,7 +204,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ZEOIQNJM
 
-[Document9]
+[Document10]
 DocumentPath=PWM-DAC-PSU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -204,7 +221,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TNUCZZBT
 
-[Document10]
+[Document11]
 DocumentPath=output&ext-modules.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -221,7 +238,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SBIZAJEQ
 
-[Document11]
+[Document12]
 DocumentPath=DCSupplyHub.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
