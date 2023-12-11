@@ -238,7 +238,92 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document12]
+DocumentPath=DCSupplyHub.BomDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=Project Outputs for DCSupplyHub\NC Drill\DCSupplyHub-v2_20231207a-Plated.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for DCSupplyHub\NC Drill\DCSupplyHub-v2_20231207a.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for Free Documents\NC Drill\DCSupplyHub-v2_20231207a.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Free Documents\Gerber\DCSupplyHub-v2_20231207a.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GM
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for DCSupplyHub\Gerber\DCSupplyHub-v2_20231207a.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for DCSupplyHub\NC Drill\DCSupplyHub-v2_20231207a.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for Free Documents\NC Drill\DCSupplyHub-v2_20231207a.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Free Documents\Gerber\DCSupplyHub-v2_20231207a.REP
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for Free Documents\NC Drill\DCSupplyHub-v2_20231207a.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument18]
 DocumentPath=Project Outputs for DCSupplyHub\Design Rule Check - DCSupplyHub-v2_20231206a.html
 DItemRevisionGUID=
 
