@@ -209,10 +209,6 @@ int main(void) {
             i2c_write(reduced_dac_value); // Apply reduced value
             i2c_stop();
         }
-
-_delay_ms(100); // Delay for loop stability and timing
-
-
         _delay_ms(100); // Add delay for loop timing and stability
     }
 }
