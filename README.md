@@ -13,7 +13,7 @@ This repository is dedicated to the LAB DC POWER SUPPLY project, a comprehensive
 
 ## Documentation
 
-For a detailed breakdown of the hardware requirements, specifications, component details, and more, refer to the [Hardware Requirements Specification](./documentation/specification.md) under the `documentation` directory.
+For a detailed breakdown of the hardware requirements, specifications, component details, and more, refer to the [Hardware Requirements Specification](./documentation/SPECS) under the `documentation` directory.
 
 ## Components
 
