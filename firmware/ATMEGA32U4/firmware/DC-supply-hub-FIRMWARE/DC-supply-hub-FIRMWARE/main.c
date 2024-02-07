@@ -125,7 +125,7 @@ int main(void) {
                 if (strncmp(buffer, "VOLTAGE", 7) == 0) {
                     voltage = atof(buffer + 8); // Convert string to float
                     // Convert voltage to DAC value and set on MAX5395
-                    uint8_t voltage_dac_value = (uint8_t)((voltage / 30.0) * 255); // Example conversion
+                    uint8_t voltage_dac_value = (uint8_t)((voltage / 30.0) * 255);
                     i2c_start();
                     i2c_write(MAX5395_ADDR << 1);
                     i2c_write(voltage_dac_value); // Assuming direct value write
@@ -133,7 +133,7 @@ int main(void) {
                 } else if (strncmp(buffer, "AMPS", 4) == 0) {
                     current = atof(buffer + 5); // Convert string to float
                     // Convert current to DAC value and set on MCP4726
-                    uint8_t current_dac_value = (uint8_t)((current / 3.0) * 255); // Example conversion
+                    uint8_t current_dac_value = (uint8_t)((current / 3.0) * 255);
                     i2c_start();
                     i2c_write(MCP4726_ADDR << 1);
                     i2c_write(current_dac_value); // Assuming direct value write
@@ -150,7 +150,7 @@ int main(void) {
         float measured_current = (adc_result / 1023.0) * ADC_REF; // Convert ADC to current
           if (measured_current > CURRENT_LIMIT) {
                 // Reduce current by adjusting DAC value on MCP4726
-                uint8_t reduced_dac_value = current_dac_value - CURRENT_ADJUSTMENT; // Example reduction
+                uint8_t reduced_dac_value = current_dac_value - DAC_ADJUSTMENT;
                 i2c_start();
                 i2c_write(MCP4726_ADDR << 1);
                 i2c_write(reduced_dac_value); // Apply reduced value
@@ -186,7 +186,6 @@ int main(void) {
         if (fabs(actual_current - desired_current) > SOME_THRESHOLD) {
             // Adjust current setting using MCP4726
             // This involves writing a new value to MCP4726 based on the difference
-            // Example placeholder code, assumes direct linear correlation
             uint8_t new_dac_value = (uint8_t)((desired_current / 3.0) * 255);
             i2c_start();
             i2c_write(MCP4726_ADDR << 1);
@@ -202,7 +201,6 @@ int main(void) {
         // Check if the current exceeds a predefined limit
         if (adc_current_limit > CURRENT_LIMIT) {
             // Adjust MCP4726 downward to reduce current
-            // Placeholder code to reduce current, actual implementation depends on the system's response characteristics
             uint8_t reduced_dac_value = new_dac_value - SOME_ADJUSTMENT; // Reduce DAC value to lower current
             i2c_start();
             i2c_write(MCP4726_ADDR << 1);
