@@ -16,6 +16,9 @@
 #define MCP4726_ADDR 0x60 // Default address
 #define INA232_ADDR 0x40  // Fixed address
 
+#define SHUNT_RESISTOR_OHMS 1.0 // 1 Ohm
+#define ADC_REF 2.048 // ADC reference voltage
+
 // Function Prototypes
 void uart_init(void);
 void uart_transmit(uint8_t data);
@@ -100,7 +103,6 @@ int main(void) {
     adc_init();
 
 int main(void) {
-    // Initialization routines
     uart_init();
     i2c_init();
     adc_init();
@@ -148,14 +150,13 @@ int main(void) {
         float measured_current = (adc_result / 1023.0) * ADC_REF; // Convert ADC to current
           if (measured_current > CURRENT_LIMIT) {
                 // Reduce current by adjusting DAC value on MCP4726
-                uint8_t reduced_dac_value = current_dac_value - SOME_ADJUSTMENT; // Example reduction
+                uint8_t reduced_dac_value = current_dac_value - CURRENT_ADJUSTMENT; // Example reduction
                 i2c_start();
                 i2c_write(MCP4726_ADDR << 1);
                 i2c_write(reduced_dac_value); // Apply reduced value
                 i2c_stop();
             }
 
-        // Placeholder variables for simplicity, assume proper conversion functions are implemented
         float actual_current = 0.0; // Actual current measured by INA232
         float desired_current = current; // Desired current set via UART
         float adc_current_limit = 0.0; // Current limit detected by ADC
@@ -163,11 +164,23 @@ int main(void) {
         // Read actual current from INA232
         i2c_start();
         i2c_write(INA232_ADDR << 1); // Write device address with write bit
-        // Assuming a specific register read procedure here, typically you need to write the register address first
+        i2c_write(INA232_CURRENT_REG); // Specify the current register address
         i2c_restart(); // Send a repeated start condition
-        i2c_write((INA232_ADDR << 1) | 1); // Write device address with read bit
-        actual_current = i2c_read_ack(); // Read the current value, assuming a direct correlation
+        i2c_write((INA232_ADDR << 1) | 1); // Switch to read mode
+
+        // Assuming the INA232 sends back 2 bytes of data for the current measurement
+        uint8_t msb = i2c_read_ack(); // Read MSB and send ACK for more data
+        uint8_t lsb = i2c_read_nack(); // Read LSB and send NACK to end reading
         i2c_stop();
+
+        // Combine MSB and LSB into a single 16-bit value
+        uint16_t raw_current = ((uint16_t)msb << 8) | lsb;
+
+        float convert_raw_to_actual_current(uint16_t raw_value) {
+        float shunt_voltage_microvolts = raw_value; // Direct conversion, replace with actual formula
+        float current_amps = shunt_voltage_microvolts / (1000000 * SHUNT_RESISTOR_OHMS); // Convert μV to V, then apply Ohm's law
+        return current_amps;
+}
 
         // Compare actual current with desired current and adjust if necessary
         if (fabs(actual_current - desired_current) > SOME_THRESHOLD) {
