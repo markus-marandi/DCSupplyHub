@@ -2,7 +2,7 @@
 #include <Wire.h>
 
 /*
-ENCODER 
+ENCODER
 
 2 PIN side
 - UPPER to DIG4
@@ -14,12 +14,18 @@ ENCODER
 - LOWER to DIG2
 
 Display
-- SDA -  A4
-- SCL - A5
+- SDA -  A4 ROHELINE
+- SCL - A5 SININE
 
-UART connection:
-Arduino Nano TX (D1) to ATmega32U4 RX pin.
-Arduino Nano RX (D0) to ATmega32U4 TX pin.
+Current
+const int encoderPin1 = 2;
+const int encoderPin2 = 3;
+const int encoderSwitchPin = 4;  // Push button switch of the encoder
+
+Voltage
+const int encoderPin1 = 6;
+const int encoderPin2 = 7;
+const int encoderSwitchPin = 8;  // Push button switch of the encoder
 
 */
 
@@ -71,8 +77,8 @@ void loop() {
   }
 
   // Calculate the display value based on encoder value
-  float displayVal = encoderValue * 0.1;           // Example step of 0.1 per encoder step
-  displayVal = max(0.00, min(displayVal, 30.00));  // Constrain between 0.00 and 30.00
+  float displayVal = encoderValue * 0.05;           // Example step of 0.05 per encoder step
+  displayVal = max(0.00, min(displayVal, 3.00));  // Constrain between 0.00 and 3.00
 
   if (lastDisplayValue != encoderValue) {
     // Update the display only if the value has changed

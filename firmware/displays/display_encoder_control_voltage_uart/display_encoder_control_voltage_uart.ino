@@ -14,12 +14,18 @@ ENCODER
 - LOWER to DIG2
 
 Display
-- SDA -  A4
-- SCL - A5
+- SDA -  A4 ROHELINE
+- SCL - A5 SININE
 
-UART connection:
-Arduino Nano TX (D1) to ATmega32U4 RX pin.
-Arduino Nano RX (D0) to ATmega32U4 TX pin.
+Current
+const int encoderPin1 = 2;
+const int encoderPin2 = 3;
+const int encoderSwitchPin = 4;  // Push button switch of the encoder
+
+Voltage
+const int encoderPin1 = 6;
+const int encoderPin2 = 7;
+const int encoderSwitchPin = 8;  // Push button switch of the encoder
 
 */
 
@@ -38,8 +44,8 @@ int lastMSB = 0;
 int lastLSB = 0;
 
 void setup() {
-  Serial.begin(9600); // have to be the same as the baud rate of the ATmega32U4
-  Wire.begin();  // Start I2C communication
+  Serial.begin(9600);  // have to be the same as the baud rate of the ATmega32U4
+  Wire.begin();        // Start I2C communication
 
   // Setup encoder pins
   pinMode(encoderPin1, INPUT_PULLUP);
@@ -71,13 +77,14 @@ void loop() {
   }
 
   // Calculate the display value based on encoder value
-  float displayVal = encoderValue * 0.05;           // Example step of 0.05 per encoder step
-  displayVal = max(0.00, min(displayVal, 3.00));  // Constrain between 0.00 and 3.00
+  float displayVal = encoderValue * 0.1;           // Example step of 0.1 per encoder step
+  displayVal = max(0.00, min(displayVal, 30.00));  // Constrain between 0.00 and 30.00
 
   if (lastDisplayValue != encoderValue) {
     // Update the display only if the value has changed
     lastDisplayValue = encoderValue;
     displayNumber(displayVal);
+    Serial.println("V");
     Serial.println(displayVal);
   }
 
@@ -118,14 +125,14 @@ void displayNumber(float value) {
   }
 
   // Debug output to serial monitor
-  Serial.print("Displaying: ");
+  //Serial.println("Voltage: ");
   if (whole == 0) {
-    Serial.print(" 0.");
+    //Serial.println(" 0.");
   } else {
-    Serial.print(whole);
-    Serial.print('.');
+    //Serial.println(whole);
+    //Serial.println('.');
   }
-  Serial.println(decimal);
+  //Serial.println(decimal);
 }
 
 void updateEncoder() {
