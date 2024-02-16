@@ -77,7 +77,7 @@ void loop() {
   }
 
   // Calculate the display value based on encoder value
-  float displayVal = encoderValue * 0.1;           // Example step of 0.1 per encoder step
+  float displayVal = encoderValue * 0.05;           // Example step of 0.05 per encoder step
   displayVal = max(0.00, min(displayVal, 30.00));  // Constrain between 0.00 and 30.00
 
   if (lastDisplayValue != encoderValue) {
